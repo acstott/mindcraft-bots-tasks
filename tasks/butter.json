@@ -1,32 +1,44 @@
 {
-  "deliver_gold_block": {
-    "goal": "Craft the required tools, mine and smelt enough gold to craft one gold block, then deliver the gold block to the nearest player.",
+  "deliver_gold_ingot": {
+    "goal": "Follow a strict tool progression (wood -> stone -> iron) to mine gold ore, smelt it into at least 1 gold ingot, then deliver the gold ingot to the nearest player.",
     "instructions": [
+      "PHASE 1 — WOOD + CRAFTING TABLE (do not search for stone/iron/gold yet)",
       "1. Collect at least 8 logs from nearby trees.",
       "2. Craft the logs into wooden planks.",
-      "3. Craft a crafting table.",
-      "4. Craft wooden tools: wooden pickaxe.",
-      "5. Mine stone and collect at least 12 cobblestone.",
-      "6. Craft stone tools: stone pickaxe and stone sword.",
-      "7. Mine iron ore and collect at least 3 raw iron.",
-      "8. Craft a furnace using cobblestone.",
-      "9. Smelt raw iron into iron ingots using the furnace.",
-      "10. Craft an iron pickaxe using iron ingots and sticks.",
-      "11. Locate a cave or underground area below Y=32.",
-      "12. Mine gold ore using the iron pickaxe until at least 9 raw gold is collected.",
-      "13. Smelt the raw gold into 9 gold ingots using the furnace.",
-      "14. Craft 1 gold block using the 9 gold ingots.",
-      "15. Locate the nearest player entity.",
-      "16. Walk to the player and drop the gold block on the ground directly in front of them."
+      "3. Craft a crafting table and place it on the ground near your working area.",
+
+      "PHASE 2 — WOODEN PICKAXE -> COBBLESTONE (do not search for iron/gold yet)",
+      "4. Using the crafting table, craft a wooden pickaxe.",
+      "5. Mine stone with the wooden pickaxe until you have at least 16 cobblestone total (you will use this for tools + a furnace).",
+
+      "PHASE 3 — STONE PICKAXE -> IRON ORE (do not search for gold yet)",
+      "6. Using the crafting table, craft a stone pickaxe (keep the remaining cobblestone).",
+      "7. Locate a cave or dig down safely to find iron ore.",
+      "8. Mine iron ore with the stone pickaxe until you collect at least 3 raw iron.",
+
+      "PHASE 4 — FURNACE + FUEL -> IRON PICKAXE",
+      "9. Using the crafting table, craft a furnace using 8 cobblestone (do not use all cobblestone; keep leftovers if possible).",
+      "10. Collect fuel (at least 8 pieces of coal OR make charcoal by smelting logs).",
+      "11. Smelt raw iron in the furnace until you have at least 3 iron ingots.",
+      "12. Using the crafting table, craft an iron pickaxe.",
+
+      "PHASE 5 — IRON PICKAXE -> GOLD ORE -> GOLD INGOT",
+      "13. Go deeper underground (gold commonly appears below Y=32).",
+      "14. Mine gold ore with the iron pickaxe until you collect at least 1 raw gold.",
+      "15. Smelt raw gold in the furnace until you have at least 1 gold ingot.",
+
+      "PHASE 6 — DELIVER",
+      "16. Locate the nearest player.",
+      "17. Walk to the player and drop the gold ingot in front of them."
     ],
     "initial_inventory": {},
     "agent_count": 1,
-    "target": "gold_block",
+    "target": "gold_ingot",
     "number_of_target": 1,
     "type": "techtree",
-    "max_depth": 4,
+    "max_depth": 6,
     "depth": 0,
-    "timeout": 1800,
+    "timeout": 2400,
     "blocked_actions": {
       "0": [],
       "1": []
