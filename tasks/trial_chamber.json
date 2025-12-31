@@ -1,0 +1,29 @@
+{
+  "build_basic_shelter": {
+    "goal": "First collect 16 acacia logs, craft them into at least 64 acacia planks, craft a wooden hoe, collect at least five seeds, then build a hollow 4x4x4 shelter with an entrance near a river and, within a 30-block radius of the shelter, create a small farm using the wooden hoe.",
+    "instructions": [
+      "1. Collect exactly 16 acacia logs near spawn.",
+      "2. Craft all 16 acacia logs into at least 64 acacia planks.",
+      "3. Craft a wooden hoe using acacia planks and sticks.",
+      "4. Explore near spawn and choose a flat area close to a river to build the shelter.",
+      "5. Build a hollow 4x4x4 shelter using acacia planks: four walls, four blocks wide in each direction, and four blocks high.",
+      "6. Leave a one-block-wide entrance in one wall so that the player can walk in and out.",
+      "7. After the shelter is complete, use the wooden hoe to till the ground within a 30-block radius of the shelter.",
+      "8. Collect at least five seeds and plant them in the tilled farmland near the river to create a small farm."
+    ],
+    "initial_inventory": {},
+    "agent_count": 1,
+    "target": "shelter",
+    "number_of_target": 1,
+    "type": "techtree",
+    "max_depth": 2,
+    "depth": 0,
+    "timeout": 900,
+    "blocked_actions": {
+      "0": [],
+      "1": []
+    },
+    "missing_items": [],
+    "requires_ctable": false
+  }
+}

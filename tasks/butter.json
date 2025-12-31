@@ -1,0 +1,37 @@
+{
+  "deliver_gold_block": {
+    "goal": "Craft the required tools, mine and smelt enough gold to craft one gold block, then deliver the gold block to the nearest player.",
+    "instructions": [
+      "1. Collect at least 8 logs from nearby trees.",
+      "2. Craft the logs into wooden planks.",
+      "3. Craft a crafting table.",
+      "4. Craft wooden tools: wooden pickaxe.",
+      "5. Mine stone and collect at least 12 cobblestone.",
+      "6. Craft stone tools: stone pickaxe and stone sword.",
+      "7. Mine iron ore and collect at least 3 raw iron.",
+      "8. Craft a furnace using cobblestone.",
+      "9. Smelt raw iron into iron ingots using the furnace.",
+      "10. Craft an iron pickaxe using iron ingots and sticks.",
+      "11. Locate a cave or underground area below Y=32.",
+      "12. Mine gold ore using the iron pickaxe until at least 9 raw gold is collected.",
+      "13. Smelt the raw gold into 9 gold ingots using the furnace.",
+      "14. Craft 1 gold block using the 9 gold ingots.",
+      "15. Locate the nearest player entity.",
+      "16. Walk to the player and drop the gold block on the ground directly in front of them."
+    ],
+    "initial_inventory": {},
+    "agent_count": 1,
+    "target": "gold_block",
+    "number_of_target": 1,
+    "type": "techtree",
+    "max_depth": 4,
+    "depth": 0,
+    "timeout": 1800,
+    "blocked_actions": {
+      "0": [],
+      "1": []
+    },
+    "missing_items": [],
+    "requires_ctable": true
+  }
+}

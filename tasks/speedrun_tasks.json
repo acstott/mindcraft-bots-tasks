@@ -1,0 +1,47 @@
+{
+  "gather_16_acacia_logs": {
+    "goal": "Collect at least sixteen acacia logs as fast as possible.",
+    "initial_inventory": {},
+    "agent_count": 1,
+    "target": "acacia_log",
+    "number_of_target": 16,
+    "type": "techtree",
+    "max_depth": 1,
+    "depth": 0,
+    "timeout": 600,
+    "blocked_actions": {
+      "0": [],
+      "1": []
+    },
+    "missing_items": [],
+    "requires_ctable": false
+  },
+
+  "craft_sword_and_bed": {
+    "goal": "Collect wood and other materials to craft one wooden sword and one bed, then place the bed near spawn.",
+    "instructions": [
+      "1. Collect enough logs near spawn (at least 8), preferably acacia logs.",
+      "2. Craft the logs into wooden planks.",
+      "3. Craft a crafting table from wooden planks and place it near spawn.",
+      "4. Craft sticks from wooden planks.",
+      "5. Use the crafting table, planks, and sticks to craft one wooden sword.",
+      "6. Find sheep nearby and obtain at least three blocks of wool (for example, by using the wooden sword).",
+      "7. Collect additional wooden planks as needed and craft one bed.",
+      "8. Place the bed on flat ground near spawn."
+    ],
+    "initial_inventory": {},
+    "agent_count": 1,
+    "target": "bed",
+    "number_of_target": 1,
+    "type": "techtree",
+    "max_depth": 2,
+    "depth": 0,
+    "timeout": 900,
+    "blocked_actions": {
+      "0": [],
+      "1": []
+    },
+    "missing_items": [],
+    "requires_ctable": false
+  }
+}
